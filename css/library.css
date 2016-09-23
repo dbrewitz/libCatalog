@@ -1,0 +1,717 @@
+/* add custom css to library website */
+
+/* menu overlap fix */
+.siteHeader .siteWrap {
+    margin: 10px auto;
+}
+
+/* tabbed widget skin change */
+
+.widget.skin43 .cpTabs>li>a:link,
+.widget.skin43 .cpTabs>li>a:visited {
+    background-color: rgba(237, 235, 230, .6) !important;
+    border-bottom: 4px solid #009445 !important;
+}
+
+.widget.skin43 .cpTabs>li {
+    border-right: 1px solid #bfbfbf !important;
+    border-left: 1px solid #bfbfbf !important;
+}
+
+.widget.skin43 .cpTabs>li:first-child {
+    border-left: 4px solid #bfbfbf !important;
+}
+
+.widget.skin43 .cpTabs>li:last-child {
+    border-right: 4px solid #bfbfbf !important;
+}
+
+.widget.skin43 .cpTabs>li.active>a {
+    background-color: #009445 !important;
+    border-bottom: 4px solid #009445 !important;
+}
+
+
+/* padding for gear icon and other little green button */
+
+.widget.skin57 .widgetHeader {
+    padding-top: 0 !important;
+}
+
+
+/* search box and icon - to do: add search icon to cp server */
+
+
+/* civicplus search */
+
+#widgetPreviewSearch> div> a> img {
+    display: none
+}
+
+
+/* sign in show on top of containers */
+
+#structuralContainer5,
+#structuralContainer4 {
+    z-index: 0;
+}
+
+@media only screen and (max-width: 850px) {
+    .outer[data-widgetcontainerid="3e6766b0-f943-4bbc-8d2e-90a8886e13d5"],
+    .outer[data-widgetcontainerid="b1978137-ec89-4fb4-947e-18005c3eb623"],
+    .outer[data-widgetcontainerid="7cd2322c-5e63-4ade-96f8-7dbdf3942694"],
+    .outer[data-widgetcontainerid="3ddd1bc9-db03-41b5-b8db-16ca33610164"] {
+        z-index: 0;
+    }
+}
+
+.widget.skin63 .megaMenuItem .widgetTitle:hover,
+.widget.skin63 .megaMenuItem .widgetTitle>a:hover {
+    text-decoration: underline;
+}
+
+.inner .widget.skin58 a:visited {
+    color: #fff;
+}
+
+
+/* login to catalog css */
+
+.login-link {
+    min-width: 130px;
+    z-index: 6;
+    display: block;
+    position: relative;
+    width: 100%;
+    max-height: 50px;
+    text-align: left;
+    right: 0;
+    top: 0;
+    color: #fff;
+    background: #000;
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.login-link:hover:before,
+.login-link:focus:before,
+.login-link:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    border-width: 2px;
+}
+
+.login-link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition-property: border-width;
+    transition-property: border-width;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#session {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 12px;
+    vertical-align: top;
+    white-space: nowrap;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+#session.active,
+#session:hover {
+    color: fff;
+}
+
+#session a {
+    text-decoration: none;
+}
+
+a#signin-link {
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+}
+
+#signin-link:after {
+    content: "";
+    position: absolute;
+    border-top: 5px solid #fff;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    height: 0;
+    width: 0;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+#loginDiv input[type=number]::-webkit-inner-spin-button,
+#loginDiv input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#loginPageForm input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#signin-dropdown {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-width: 160px;
+    margin-top: 1px;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    padding-bottom: 0;
+    display: none;
+    height: auto;
+    z-index: 10;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#18475e+2,236077+30,236077+30,004a60+55,236077+85,236077+94 */
+    background: #1d6078;
+}
+
+#signin-dropdown form {
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+}
+
+#signin-dropdown .textbox span {
+    color: white;
+}
+
+#signin-dropdown .textbox input {
+    width: 150px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+form.signin .textbox label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+form.signin .textbox span {
+    display: block;
+}
+
+form.signin p,
+form.signin span {
+    color: #999;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+form.signin .textbox input {
+    background: #fff;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #000;
+    border-right: 1px solid #333;
+    border-top: 1px solid #000;
+    color: #333;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font: 13px Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px;
+}
+
+.remb {
+    margin-top: 10px;
+}
+
+form.signin .remb {
+    text-align: right;
+}
+
+#submit_0 {
+    border-width: 1px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0;
+    transition: all .3s ease-in-out;
+    background: #000;
+}
+
+#submit_0:hover {
+    background: #009445;
+}
+
+#widgetPreviewSearch> div> a {
+    background: url('https://wcm.ent.sirsi.net/custom/web/images/search.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 50%;
+    width: 42px;
+    height: 39px;
+    background-color: #1d6078;
+    float: right;
+    margin: 0 0 3px 3px;
+    transition: all .2s ease-in-out;
+    border: solid 3px #fff;
+}
+
+
+/* catalog search */
+
+#searchForm {
+    display: inline-block;
+    background-color: #fff;
+}
+
+#searchButton {
+    background: url('https://wcm.ent.sirsi.net/custom/web/images/search.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 50%;
+    width: 42px;
+    height: 39px;
+    background-color: #1d6078;
+    float: right;
+    transition: all .2s ease-in-out;
+    border: solid 3px #fff;
+}
+
+#q {
+    width: 80%;
+    border: none;
+    padding: 6px 5px 6px 20px;
+    font-family: Open Sans;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 600;
+    height: 40px;
+}
+
+#q::-webkit-input-placeholder {
+    color: #867877;
+}
+
+#q::-moz-placeholder {
+    color: #867877;
+}
+
+#q:-ms-input-placeholder {
+    color: #867877;
+}
+
+#q:-moz-placeholder {
+    color: #867877;
+}
+
+#searchButton:hover,
+#widgetPreviewSearch> div> a:hover {
+    background-color: #009445;
+}
+
+
+/* CivicPlus Slider */
+
+.slideshowOptions .overlay {
+    max-width: 25%;
+    left: 72% !important;
+    height: 100%;
+    background-color: rgba(24, 24, 38, 0.4);
+    font-family: "Open Sans", sans-serif;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    display: none;
+}
+
+.widget.skin43 .slideshowOptions .overlay .widgetTitle {
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+.slideshowOptions .overlay .widgetDesc {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.widget.skin43 .widgetTitle:hover,
+.widget.skin43 .widgetTitle>a:hover {
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 400px) {
+    .slideshowOptions .overlay {
+        display: none;
+    }
+}
+
+
+/*Booksite Recommendations Widget*/
+
+.eqi-container {
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: rgba(237, 235, 230, .6) !important;
+}
+
+.eqi-container> iframe {
+    height: 350px !important;
+    width: 200px !important;
+    box-sizing: border-box !important;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*RSS Feed styling*/
+
+.widgetRSSFeed .widgetHeader,
+.widgetHeader .rssTitleNone {
+    display: none;
+}
+
+.row.nest.last.wide .rssInner.inner.col,
+#cc9b263b9d-a7e2-4e23-b747-b6d686e76be0> div:nth-child(2)> div.outer.col.col12.first> div.row.nest.last.wide> div {
+    padding-top: 0;
+}
+
+.calInner.inner.col,
+#cc9b263b9d-a7e2-4e23-b747-b6d686e76be0> div:nth-child(2)> div.outer.col.col12.first> div.row.nest.first.wide> div {
+    padding-bottom: 0;
+}
+
+.widgetViewAll.alignRight {
+    float: left;
+}
+
+
+/* override search tab color */
+
+.widget.skin56 .cpTabs>li>a:link,
+.widget.skin56 .cpTabs>li>a:visited {
+    background-color: #dbdbdb !important;
+    border-bottom: 4px solid #1d6078 !important;
+}
+
+.widget.skin56 .cpTabs>li.active>a {
+    background-color: #1d6078 !important;
+}
+
+
+/*Evanced Calendar Styling*/
+
+.heading {
+    font-family: 'Libre Baskerville';
+    font-size: 19.2px;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #009445;
+}
+
+#headingText {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: normal;
+}
+
+
+/* Current Month Styles ---------------------------------------------------------------------------------------- */
+
+.eventstinycal {
+    /*overflow:auto;*/
+    font-size: 1em;
+    width: 100%;
+    /* Controls width of calendar - can be set to fixed width or a percentage relative to the container using a table or div as the container. */
+    background: rgba(237, 235, 230, .6) !important;
+    padding: 5px 15px 0px 15px;
+}
+
+.eventstinycal a:link {
+    color: #4f4743;
+    text-decoration: none !important;
+}
+
+.eventstinycal a:visited {
+    color: #4f4743;
+    text-decoration: none !important;
+}
+
+.eventstinycal a:hover {
+    color: #4f4743;
+    text-decoration: underline;
+}
+
+.eventstinycal #tinycal_date,
+#tinycal_date a:link,
+#tinycal_date a:visited {
+    text-align: center;
+    font-size: 1em;
+    color: #4f4743;
+    padding: 0px;
+}
+
+.eventstinycal #tinycal {
+    font-size: 1em;
+    text-align: center;
+    vertical-align: top;
+    background-color: transparent;
+    width: 100%;
+    float: left;
+}
+
+.eventstinycal #tinycal tbody {
+    padding-bottom: 20px;
+}
+
+
+/* Widget Header*/
+
+.eventstinycal #tinycal_nav {
+    /*Defines the display of the month/increment decrement month navigation*/
+    color: #645d59;
+    /*	background-color:#236077; */
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.eventstinycal #tinycal_weekday {
+    /*Defines the display of day cells*/
+    color: #4f4743;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    background: none;
+}
+
+.eventstinycal #tinycal_day {
+    /*Defines the display of blank day cells.*/
+    color: #000000;
+    padding: 5px 0px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.eventstinycal #tinycal_current_day {
+    /*Defines the display of blank day cells.*/
+    color: #FFF;
+    background-color: #4f4743;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.eventstinycal #tinycal_current_day a:link,
+#tinycal_current_day a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.eventstinycal #tinycal_current_day a:hover {
+    color: #FFF;
+}
+
+.eventstinycal #tinycal_blank {
+    /*Defines the display of blank day cells.*/
+    background-color: transparent;
+}
+
+
+/* Other Month Styles --------------------------------------------------------------------------------------------- */
+
+.eventstinycal2 {
+    /*overflow:auto;*/
+    font-size: 1em;
+    width: 250px;
+    /* Controls width of calendar - can be set to fixed width or a percentage relative to the container using a table or div as the container. */
+    padding: 0px;
+    margin: 0px;
+    margin-left: 1.1em;
+    margin-bottom: 20px;
+}
+
+.eventstinycal2 a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+.eventstinycal2 a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+.eventstinycal2 a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.eventstinycal2 #tinycal_date,
+#tinycal_date a:link,
+#tinycal_date a:visited {
+    color: rgb(100, 93, 89);
+    display: block;
+    font-family: "Open Sans";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30.24px;
+    text-align: center;
+    text-transform: none;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.eventstinycal2 #tinycal {
+    font-size: 1em;
+    padding: 0px;
+    text-align: center;
+    vertical-align: top;
+    background-color: transparent;
+    width: 100%;
+    float: left;
+}
+
+.eventstinycal2 #tinycal_nav {
+    /*Defines the display of the month/increment decrement month navigation*/
+    color: #FFF;
+    background-color: #A2d783;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.eventstinycal2 #tinycal_weekday {
+    /*Defines the display of day cells*/
+    color: #FFF;
+    background-color: #c4c7c8;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.eventstinycal2 #tinycal_day {
+    /*Defines the display of blank day cells.*/
+    color: #000000;
+    background-color: #FFF;
+    padding: 0px;
+    vertical-align: top;
+}
+
+.eventstinycal2 #tinycal_current_day {
+    /*Defines the display of blank day cells.*/
+    color: #FFF;
+    background-color: #4f4743;
+    vertical-align: top;
+}
+
+.eventstinycal2 #tinycal_current_day a:link,
+#tinycal_current_day a:visited {
+    color: #FFF;
+}
+
+.eventstinycal2 #tinycal_current_day a:hover {
+    color: #FFF;
+}
+
+.eventstinycal2 #tinycal_blank {
+    /*Defines the display of blank day cells.*/
+    background-color: transparent;
+}
+
+.pageStyles table,
+table[class^="telerik-"] {
+    background: none !important;
+}
+
+.pageStyles td,
+.pageStyles th,
+table[class^="telerik-"] td,
+table[class^="telerik-"] th {
+    padding: 0px;
+}
+
+
+/*Events and Classes Evanced button styling*/
+
+.eventsAndClassesDivButtonContainerLink {
+    text-decoration: none !important;
+}
+
+.eventsAndClassesDivButtonContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 33.33%;
+    height: 100px;
+}
+
+.eventsAndClassesDivButton {
+    background: #1d6078;
+    color: #fff;
+    align-self: center;
+    padding: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* attempt to stop big top banner snapping into position
+
+@media only screen and (min-width: 1175px) {
+#structuralContainer3,#structuralContainer3 .widgetBody.cpGrid.cpGrid3, #structuralContainer3 .widgetBody.cpGrid.cpGrid3 .row, #structuralContainer3 .widgetBody.cpGrid.cpGrid3 .row .col{
+max-height:55px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1174px){
+#structuralContainer3,#structuralContainer3 .widgetBody.cpGrid.cpGrid3, #structuralContainer3 .widgetBody.cpGrid.cpGrid3 .row, #structuralContainer3 .widgetBody.cpGrid.cpGrid3 .row .col{
+max-height:78px;
+    }
+}
+
+*/

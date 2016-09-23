@@ -1,0 +1,275 @@
+/* aska skin */
+/*Sets the border color for the entire Qwidget*/
+#qpchatwidget{
+    border-color: #236077;
+}
+
+/*Sets the background color for the Qwidget name in the title*/
+.qp_institution_name_bar{
+    background-color: #236077;
+}
+
+/*Sets the font color for the Qwidget name in the title*/
+.qp_title {
+    color: white;
+}
+
+/*Sets the background color for the popout icon*/
+.qp_popout_icon{
+    background-color: #236077;
+}
+
+
+
+/*Sets the background color for icons bar*/
+.qp_icons_bar{
+    border-bottom: 1px solid #236077;
+    background-color: #80a4b1;
+}
+
+/*Sets the background and border color for help icon*/
+.qp_help_icon{
+    border-right: 1px solid #236077;
+    background-color: #80a4b1;
+}
+
+/*Sets the image for the help icon in the icons bar section*/
+
+/*Sets the background color for help icon in the Qwidget Name title bar section*/
+.qp_help_icon_title_bar{
+    background-color: #FF0000;
+}
+/*Sets the help icon image in the Qwidget Name title bar section*/
+
+
+/*Sets the background color for the email icon*/
+.qp_email_icon{
+    background-color: #80a4b1;
+}
+
+/*Sets the email icon image*/
+
+/*Sets the background color for the end chat icon*/
+.qp_end_chat_icon{
+    border-left: 1px solid #236077;
+    background-color: #80a4b1;
+}
+
+/*Sets the end chat image*/
+
+
+/*--------Main Chat Section-------*/
+/*Sets the background color for the chat*/
+.qp_chat_transcript {
+    background-color: white;
+}
+
+/*Sets the background color and font color for the text the patron types*/
+.qp_widget_message_echo{
+    background-color:#236077;
+    color: white;
+}
+
+/*Sets the background color and font color for the text the librarian types*/
+.qp_widget_message_remote{
+    background-color: white;
+    color: black;
+    border-color: #F0F0F0;
+}
+
+/*Sets the font color for the nudge message*/
+.qp_nudge_message_text_default{
+    color: black;
+}
+
+/*Sets the background color for the nudge message*/
+.qp_nudge_message{
+    background-color: #80a4b1;
+    border: 1px solid #236077;
+}
+
+/*Sets the background color and font color for 'Librarian is typing..' message */
+.qp_librarian_typing_message{
+    background-color: white;
+    color: #434343;
+}
+
+/*Sets the background color for the container which surrounds the input box where the patron types the question*/
+.qp_question_input_area{
+    background-color: #80a4b1;
+}
+
+/*Sets the border color for container containing the input box*/
+.qp_question_input_container{
+    border-color: #236077;
+}
+
+/*Sets the background color and font color for the input box where the patron types the question*/
+.qp_question{
+    background-color: white;
+    color: black;
+}
+
+/*Sets the background color for the send button arrow*/
+.qp_send_button{
+    background-color: #edebe6;
+}
+
+/*Sets the send button arrow image*/
+
+
+/*----------Initial email overlay---------*/
+/*  The initial email overlay is the screen displayed when a library makes it mandatory to
+    require an email address before a chat session.*/
+
+/*Sets the background color for the initial email overlay*/
+.qp_initial_main{
+    background-color: #80a4b1;
+}
+
+/*Sets the background color and font color for the email address textbox*/
+.qp_email_address_text {
+    background-color: white;
+    color: black;
+}
+
+/*Sets the background color and font color for the initial question textbox*/
+.qp_initial_question_text {
+    background-color: white;
+    color: black;
+}
+
+/*Sets the background color gradient, font color and border color for the Send button*/
+.qp_initial_send_button{
+    color: black;
+    border: 1px solid #236077;
+    background-image: -webkit-linear-gradient(top, #80a4b1, #236077);
+    background-image: -moz-linear-gradient(center top , #80a4b1, #236077);
+    background-image: -ms-linear-gradient(top, #80a4b1, #236077);
+    background-image: -o-linear-gradient(top, #80a4b1, #236077);
+    background-image: linear-gradient(top, #80a4b1, #236077);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80a4b1', endColorstr='#236077');
+}
+
+/*----------End session overlay---------*/
+/*When a user clicks on the end session button the end session overlay screen is displayed*/
+
+/*Sets the background color for the end session overlay screen*/
+.qp_end_session_overlay{
+    background-color: #80a4b1;
+}
+
+/*Sets the color for the border*/
+.qp_end_session_overlay_content {
+    border-bottom: solid 1px #CDCDCD;
+    color: gray;
+}
+
+/*Sets the background color gradient, font color and border color for the Email session transcripts button*/
+.qp_end_session_email_transcripts{
+    color: black;
+    border: 1px solid #236077;
+    background-image: -webkit-linear-gradient(top, #80a4b1, #236077);
+    background-image: -moz-linear-gradient(center top , #80a4b1, #236077);
+    background-image: -ms-linear-gradient(top, #80a4b1, #236077);
+    background-image: -o-linear-gradient(top, #80a4b1, #236077);
+    background-image: linear-gradient(top, #80a4b1, #236077);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80a4b1', endColorstr='#236077');
+}
+
+/*Sets the email sent confirmation image*/
+.qp_end_session_email_transcripts_sent_image{
+    background-image: url("images/email_sent_retina_black.png");
+}
+
+/*Sets the background color gradient, font color and border color for the Fill out a chat survey button*/
+.qp_end_session_survey{
+    color: black;
+    border: 1px solid #236077;
+    background-image: -webkit-linear-gradient(top, #80a4b1, #236077);
+    background-image: -moz-linear-gradient(center top , #80a4b1, #236077);
+    background-image: -ms-linear-gradient(top, #80a4b1, #236077);
+    background-image: -o-linear-gradient(top, #80a4b1, #236077);
+    background-image: linear-gradient(top, #80a4b1, #236077);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80a4b1', endColorstr='#236077');
+}
+
+/*Sets the background color gradient, font color and border color for the OK button*/
+.qp_end_session_ok_button{
+    color: black;
+    border: 1px solid #236077;
+    background-image: -webkit-linear-gradient(top, #80a4b1, #236077);
+    background-image: -moz-linear-gradient(center top , #80a4b1, #236077);
+    background-image: -ms-linear-gradient(top, #80a4b1, #236077);
+    background-image: -o-linear-gradient(top, #80a4b1, #236077);
+    background-image: linear-gradient(top, #80a4b1, #236077);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80a4b1', endColorstr='#236077');
+}
+
+/*----------Offline overlay---------*/
+/*Offline overlay screen is displayed when the Librarian is offline and Chat is unavailable*/
+
+/*Sets the background color for the offline overlay screen*/
+.qp_offline_overlay{
+    background-color: #80a4b1;
+}
+
+/*Sets the background color for the offline message*/
+.qp_offline_overlay_msg{
+    color: black;
+}
+
+/*Sets the background color and font color for the offline email address textbox*/
+.qp_offline_email_address_text{
+    background-color: white;
+    color: black;
+}
+
+/*Sets the background color and font color for the offline initial question textbox*/
+.qp_offline_initial_question_text{
+    background-color: white;
+    color: black;
+}
+
+/*Sets the background color gradient, font color and border color for the Send button*/
+.qp_offline_initial_send_button{
+    color: black;
+    border: 1px solid #236077;
+    background-image: -webkit-linear-gradient(top, #80a4b1, #236077);
+    background-image: -moz-linear-gradient(center top , #80a4b1, #236077);
+    background-image: -ms-linear-gradient(top, #80a4b1, #236077);
+    background-image: -o-linear-gradient(top, #80a4b1, #236077);
+    background-image: linear-gradient(top, #80a4b1, #236077);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80a4b1', endColorstr='#236077');
+}
+
+/*Sets the font color for the email sent confirmation message*/
+.qp_offline_question_sent_msg{
+    color: black;
+}
+
+/*----------Add Email overlay---------*/
+/*This screen is displayed when the user wants to add their email to the chat session, if previously not entered*/
+
+/*Sets the background color for the Add email overlay*/
+.qp_email_form{
+    background-color: #80a4b1;
+}
+
+/*Sets the background color and font color for the email address textbox*/
+.qp_email_form_elem_input{
+    background-color: white;
+    color: black;
+}
+
+/*Sets the background color gradient, font color and border color for the buttons on this screen*/
+.qp_email_form_btn{
+    color: black;
+    border: 1px solid #236077;
+    background-image: -webkit-linear-gradient(top, #80a4b1, #236077);
+    background-image: -moz-linear-gradient(center top , #80a4b1, #236077);
+    background-image: -ms-linear-gradient(top, #80a4b1, #236077);
+    background-image: -o-linear-gradient(top, #80a4b1, #236077);
+    background-image: linear-gradient(top, #80a4b1, #236077);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80a4b1', endColorstr='#236077');
+}

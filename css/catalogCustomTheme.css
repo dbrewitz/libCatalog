@@ -1,0 +1,1108 @@
+    @import 'https://wcm.ent.sirsi.net/client/css/vse/boxed.css';
+    /*---- Version 5.0 ---------------------------------------------------------------------*/
+    /*  --========= 08.15.16 - v5.0 -  David Brewitz =================-- */
+    /*-----------------------------------------------------------------------------------*/
+    /*--- Container Layout --------------------------------------------------------------*/
+    
+    body {
+        background: #fff;
+        background-image: url(images/backgroundTexture.jpeg);
+        width: 100%;
+        box-sizing: border-box;
+        font-family: Verdana, open sans, Unicode MS, Arial, Helvetica, sans-serif !important;
+        border: none;
+        font-size: 14px;
+        color: #696764;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    a {
+        color: #056331;
+        transition: all .2s ease-in-out;
+    }
+    
+    a:hover,
+    a:active,
+    a.hideIE {
+        color: #236077;
+        transition: all .2s ease-in-out;
+    }
+    
+    .eventsinfo #eventtitle a:link,
+    a:visited {
+        color: #4f4743;
+    }
+    
+    .header,
+    #content,
+    #footer,
+    .limitcolumn_wrapper,
+    .button,
+    .displayElementText,
+    .list .results_right .button {
+        font-family: Verdana, open sans, Unicode MS, Arial, Helvetica, sans-serif !important;
+        font-size: 14px;
+    }
+    
+    .columns_container .pct25 {
+        /*  -webkit-box-shadow: 2px 4px 37px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 37px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 37px -2px rgba(0, 0, 0, 0.75);
+    */
+    }
+    /* ----- WCL theme text styling ----- */
+    
+    .section-header {
+        background-color: #009445;
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .section-subheader {
+        color: #2C668D;
+        border-bottom: 2px solid;
+        border-top: 1px solid;
+    }
+    
+    .subheader {
+        color: #609BC2;
+    }
+    
+    p.help-text {
+        color: #454545;
+        font-size: 0.9em;
+        text-align: justify;
+    }
+    
+    div.wcm-content {
+        color: #454545;
+    }
+    
+    div.wcm-content p {
+        margin: 0px 2px 5px 2px;
+    }
+    
+    div.wcm-content ul {
+        padding: 0px 10px;
+    }
+    
+    div.wcm-content a:link,
+    div.wcm-content a:visited,
+    div.wcm-help-guides a:link,
+    div.wcm-help-guides a:visited {
+        font-weight: normal;
+        text-decoration: underline;
+    }
+    
+    div.wcm-help-guides a:link,
+    div.wcm-help-guides a:visited {
+        text-decoration: none;
+    }
+    
+    div.wcm-content a:hover,
+    div.wcm-help-guides a:hover {
+        text-decoration: underline;
+    }
+    
+    .hanging-indent-list {
+        padding-left: 15px;
+        text-indent: -15px;
+    }
+    /*--- Header -----------------------------------------------------------------*/
+    
+    .header {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .headerWrapper {
+        width: 100%;
+        box-sizing: border-box;
+        background: #808285;
+    }
+    
+    .header_container {
+        background-color: #edebe6 !important;
+        width: 100%;
+    }
+    
+    #mainMenu {
+        width: 100%;
+        background-color: #000;
+        padding: .5% 5%;
+        box-sizing: border-box;
+    }
+    
+    #mainMenuContainer {
+        width: 100%;
+    }
+    
+    #mainMenuContainer a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    #mainMenuContainer .pipeSeparator-light {
+        color: #009445;
+    }
+    /* ----- Menu ----- */
+    
+    .welcome {
+        font-weight: bold;
+    }
+    
+    .logo_container img {
+        width: 100%;
+        max-width: 450px;
+        margin: 20px 0;
+    }
+    
+    #logo_container {
+        box-sizing: border-box;
+        width: 100%
+    }
+    
+    .NavEntDiv {
+        float: left;
+    }
+    
+    .navEnt {
+        list-style: none;
+    }
+    
+    .navItem {
+        display: inline-flex;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    
+    .navItem a {
+        color: white !important;
+    }
+    
+    #libInfoLink,
+    #libInfoContainer> div:nth-child(8),
+    #mainMenuContainer> div:nth-child(4) {
+        display: none;
+    }
+    
+    #wcm_custom_header_menu .menuLink {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .wcm_custom_library_info li {
+        list-style-type: none;
+    }
+    
+    #libInfoContainer {
+        z-index: 100 !important;
+        vertical-align: middle;
+    }
+    
+    #adaModeDiv,
+    #patronHelp {
+        z-index: 2;
+    }
+    
+    .menuLink a,
+    .menuActive a {
+        color: #2c668d;
+    }
+    
+    .menuLink a:visited,
+    .menuActive a {
+        color: #2c668d;
+    }
+    
+    .lpdropdown li {
+        border: 0px solid #808285;
+        margin-bottom: 0px;
+    }
+    
+    .dropdownList {
+        background-color: white;
+        border: 3px solid #808285;
+        padding: 8px;
+    }
+    
+    .fa-wheelchair::before,
+    .fa-question-circle::before {
+        color: #fff;
+    }
+    
+    #loginDiv {
+        font-size: 16px;
+    }
+    /*--Content-----------------------------------------------------------------*/
+    
+    #content {
+        background-color: #ecebe6
+    }
+    
+    .content_container {
+        background-color: #edebe6;
+        border: none;
+    }
+    /*--- Search Box -----------------------------------------------------------------*/
+    
+    #searchBox {
+        background: #009445;
+        border: 2px solid #009445;
+        min-height: 36px;
+        padding-bottom: 0px;
+        border-top-width: 0px;
+        border-bottom-width: 0px
+    }
+    
+    #searchBoxWrapper {
+        background-color: #009445;
+        min-height: 40px;
+    }
+    
+    #searchBoxCentered {
+        float: none;
+    }
+    
+    #searchBox .dropDown {
+        background-color: #6fa785;
+        border: 1px solid #CCCCCC;
+        color: white;
+    }
+    
+    #searchBox .dropDown:focus {
+        border: 2px solid #CCCCCC;
+        background: #47859c;
+        color: white;
+    }
+    
+    #q {
+        border: 1px solid #CCCCCC;
+        background-color: #FCF8F3;
+        height: 25px;
+        font-size: 16px;
+        padding-left: 5px;
+    }
+    
+    #q:focus {
+        border: 1px solid #CCCCCC;
+        background: #FCF8F3;
+    }
+    
+    .quicksearchWrapper {
+        display: none;
+    }
+    
+    .searchView {
+        border-bottom: none;
+    }
+    
+    #searchButton {
+        background-color: #236077;
+    }
+    
+    #searchButton:hover {
+        background-color: #346375;
+    }
+    /*------- Buttons -----------------------------------------------------*/
+    
+    .btn-Column {
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        color: #FFF !important;
+        border-width: 10px 20px;
+        line-height: 2;
+        font-weight: bold;
+        font-family: 'Montserrat', Open Sans, Arial Unicode MS, Arial, Verdana, Helvetica, sans-serif;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 5px 5px;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 10px;
+        /* box-shadow: 5px 5px 5px #888888; */
+        width: 97%;
+    }
+    
+    .btn-Column:hover {
+        opacity: .85;
+        text-decoration: none;
+        border-radius: 30px;
+    }
+    
+    #button1,
+    #button5,
+    #button6,
+    #button7,
+    #button8 {
+        background-color: #009445;
+        border: solid #009445;
+        /*border-width: 10px 20px; */
+    }
+    
+    #button2,
+    #button3,
+    #button4 {
+        background-color: #236077;
+        border: solid #236077;
+        /* border-width: 10px 20px; */
+    }
+    
+    #button8 {
+        line-height: 1;
+        width: 98%;
+        border-radius: 5px;
+        font-size: 18px !important;
+    }
+    
+    #clearLeft {
+        display: block;
+        font-size: 16px;
+    }
+    
+    .button {
+        background-color: #236077;
+        transition: all .3s ease-in-out;
+        color: #fff;
+    }
+    
+    .button:hover {
+        background-color: #009445;
+        color: #fff;
+        opacity: .8;
+        transition: all .3s ease-in-out;
+    }
+    
+    .loginButton {
+        background-color: #236077;
+        background-color: #009445;
+        color: #fff;
+    }
+    
+    .loginButton:hover {
+        background-color: #236077;
+        opacity: .8;
+        color: #fff;
+    }
+    
+    #searchBoxAdvancedLink a {
+        color: #fff;
+           }
+    #page-title {
+    display: none;
+}
+    #searchBoxAdvancedLink {
+        margin-top: 0px;
+        border-left: none;
+    }
+    /*--- Search display fixes ---------------------------------------------*/
+    
+    .searchLimitsColumn {
+        background-color: #fff;
+    }
+    
+    .displayElementText.GEOGRAPHIC_TERM {
+        display: block;
+    }
+    
+    .displayElementText.ADDED_AUTHOR {
+        display: block;
+    }
+    
+    .displayElementText.ADDED_CORPORATE_AUTHOR {
+        display: block;
+    }
+    
+    .displayElementText.GENRE_TERM {
+        display: block;
+    }
+    
+    .displayElementText.PERSONAL_SUBJECT {
+        display: block;
+    }
+    
+    #searchResultsColumn {
+        border: none;
+    }
+    
+    .limitcolumn_wrapper {
+        background: #edebe6;
+    }
+    
+    .facet {
+        border: none;
+    }
+    
+    #facetFormLIBRARY .moreNavigators,
+    #facetFormEREADER .moreNavigators {
+        display: none;
+    }
+    
+    .facetTitleRow {
+        background: rgb(205, 211, 214);
+        padding: 10px 5px;
+        margin-bottom: 3px;
+    }
+    
+    .facetTitle {
+        margin: 0 auto;
+        font-weight: 700;
+        padding-top: 5px;
+        color: #4f4743;
+        ;
+        padding-left: 5px;
+    }
+    
+    .limitcolumn_button {
+        margin-bottom: 0;
+    }
+    
+    .limitcolumn_wrapper .button {
+        padding: 5px 5px;
+    }
+    
+    .list .results_right .button {
+        height: 25px;
+        margin-left: 5px;
+    }
+    
+    .limitcolumn_wrapper .button {
+        font-size: 12px;
+    }
+    /* -- 4.3 thumbnail display fixes --------------------------------------------*/
+    
+    .thumb .results_bio {
+        margin-top: 57px;
+    }
+    
+    .thumb .no_image_text {
+        margin-top: 55px;
+    }
+    
+    .thumb .results_chkbox {
+        margin-top: 57px
+    }
+    /* -- 4.3 suggested hold window fix -------- */
+    
+    .holdsTable {
+        float: left;
+    }
+    /* --- My Account ------------------------------------------------------------*/
+    
+    #accountMain {
+        padding-left: 4px;
+    }
+    
+    #accountSummary {
+        margin-right: 4px;
+        margin-bottom: 4px;
+    }
+    /* --- Image Carousal --------------------------------------------------------*/
+    
+    .nytimes_listbar {
+        background: #236077;
+    }
+    
+    .nytimes_select {
+        color: #fff;
+        background-color: #47859c;
+    }
+    /* river */
+    
+    #visibleContentZone {
+        /*
+    -webkit-box-shadow: 2px 4px 37px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 37px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 37px -2px rgba(0, 0, 0, 0.75);
+    */
+    }
+    /* --- Accordion, Tab and Modal box Displays --------------------------------------------*/
+    
+    .ui-widget-header {
+        background: #009445;
+        color: #ffffff;
+    }
+    
+    .ui-widget-header a {
+        color: #ffffff;
+    }
+    
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default {
+        background: #609bc2 url(ui-bg_highlight-soft_65_609bc2_1x100.png) 50% 50% repeat-x scroll;
+    }
+    
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active {
+        background: #2c668d url(ui-bg_highlight-dark_65_2c668d_1x100.png) 50% 50% repeat-x scroll;
+    }
+    
+    .ui-state-active a,
+    .ui-state-active a:link,
+    .ui-state-active a:visited {
+        color: #cccccc;
+    }
+    
+    .ui-state-active .availableLabel {
+        color: #cccccc;
+    }
+    
+    li.ui-tabs-selected a {
+        color: #cccccc;
+    }
+    /*--------------------------------Evanced ------------------------*/
+    /* ----- Evanced event feed ----- */
+    /*
+div.wcm-events {
+    color: #454545;
+}
+*/
+    
+    div.wcm-events a:link {
+        text-decoration: none;
+    }
+    
+    div.wcm-events a:hover {
+        text-decoration: underline;
+    }
+    
+    .eventsinfo {
+        /*overflow:auto;*/
+        font-size: 10px;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .eventsinfo #eventtitle {
+        font-size: 16px;
+        margin-right: 5px;
+        margin-left: 10px;
+        top: 0mm;
+        width: 100%;
+        padding-top: 5px;
+        float: left;
+        /* Set float so eventtime DIV will appear to the right of event title */
+        /* color: #609BC2; */
+        padding-left: 0px;
+        padding-bottom: 5px;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .eventsinfo #eventdate {
+        text-align: left;
+        font-weight: 700;
+        margin-left: 5px;
+        font-size: 14px;
+        padding-left: 10px;
+        line-height: 100%;
+        float: left;
+    }
+    
+    .eventsinfo #eventtime {
+        text-align: right;
+        font-weight: 700;
+        margin-right: 10px;
+        font-size: 14px;
+        padding-left: 5px;
+        position: relative;
+        bottom: 2px;
+        float: right;
+    }
+    
+    .eventsinfo #eventendtime {
+        display: none;
+    }
+    
+    .eventsinfo #eventdescription {
+        padding-left: 10px;
+        padding-top: 3px;
+        text-align: left;
+        font-size: 14px;
+        clear: both;
+    }
+    
+    .eventsinfo #eventlocation {
+        clear: left;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        border-bottom: #dfe5e6 1px solid;
+        font-size: 14px;
+        text-align: right;
+        position: relative;
+        bottom: 5px;
+    }
+    
+    .eventsinfo #eventlibrary {
+        display: none;
+    }
+    
+    .eventsinfo #eventtitle a:hover {
+        text-decoration: underline;
+        color: #009445;
+    }
+    
+    .sidebar_main {
+        font-size: 20px;
+        color: #F00;
+    }
+    /*Evanced tinycal Calendar Styling*/
+    
+    .heading {
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        color: #ffffff;
+        background-color: #009445;
+    }
+    
+    #headingText {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: normal;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    #tinycal_date a:link:hover {
+        background-color: inherit;
+        color: #009445;
+    }
+    /* Current Month Styles ---------------------------------------------------------------------------------------- */
+    
+    .eventstinycal {
+        /*overflow:auto;*/
+        font-size: 1em;
+        width: 100%;
+        /* Controls width of calendar - can be set to fixed width or a percentage relative to the container using a table or div as the container. */
+        background: rgba(237, 235, 230, .6) !important;
+        padding: 5px 15px 0px 15px;
+    }
+    
+    .eventstinycal a:link {
+        color: #4f4743;
+        text-decoration: none !important;
+        padding: 8% 16%;
+        box-sizing: border-box;
+    }
+    
+    .eventstinycal a:visited {
+        color: #4f4743;
+        text-decoration: none !important;
+    }
+    
+    .eventstinycal a:hover {
+        color: #fff;
+        background-color: #736e6c;
+        text-decoration: none !important;
+    }
+    
+    .eventstinycal #tinycal_date,
+    #tinycal_date a:link,
+    #tinycal_date a:visited {
+        text-align: center;
+        font-size: 1.4em;
+        color: #4f4743;
+        padding: 0px;
+    }
+    
+    .eventstinycal #tinycal {
+        font-size: 18px;
+        text-align: center;
+        vertical-align: top;
+        background-color: transparent;
+        width: 100%;
+        float: left;
+    }
+    
+    .eventstinycal #tinycal tbody {
+        padding-bottom: 20px;
+    }
+    /* Widget Header*/
+    
+    .eventstinycal #tinycal_nav {
+        /*Defines the display of the month/increment decrement month navigation*/
+        color: #645d59;
+        /*	background-color:#236077; */
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .eventstinycal #tinycal_weekday {
+        /*Defines the display of day cells*/
+        color: #4f4743;
+        padding: 0px;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
+        background: none;
+    }
+    
+    .eventstinycal #tinycal_day {
+        /*Defines the display of blank day cells.*/
+        color: #000000;
+        padding: 1%;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+    
+    .eventstinycal #tinycal_current_day {
+        /*Defines the display of blank day cells.*/
+        color: #FFF;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .eventstinycal #tinycal_current_day a:link,
+    #tinycal_current_day a:visited {
+        color: #FFF;
+        background-color: #4f4743;
+        text-decoration: none;
+    }
+    
+    .eventstinycal #tinycal_current_day a:hover {
+        color: #FFF;
+    }
+    
+    .eventstinycal #tinycal_blank {
+        /*Defines the display of blank day cells.*/
+        background-color: transparent;
+    }
+    /* Other Month Styles --------------------------------------------------------------------------------------------- */
+    
+    .eventstinycal2 {
+        /*overflow:auto;*/
+        font-size: 1em;
+        width: 250px;
+        /* Controls width of calendar - can be set to fixed width or a percentage relative to the container using a table or div as the container. */
+        padding: 0px;
+        margin: 0px;
+        margin-left: 1.1em;
+        margin-bottom: 20px;
+    }
+    
+    .eventstinycal2 a:link {
+        color: #666;
+        text-decoration: none;
+    }
+    
+    .eventstinycal2 a:visited {
+        color: #666;
+        text-decoration: none;
+    }
+    
+    .eventstinycal2 a:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    .eventstinycal2 #tinycal_date,
+    #tinycal_date a:link,
+    #tinycal_date a:visited {
+        color: rgb(100, 93, 89);
+        display: block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 30.24px;
+        text-align: center;
+        text-transform: none;
+        word-break: break-word;
+        word-wrap: break-word;
+    }
+    
+    .eventstinycal2 #tinycal {
+        font-size: 1em;
+        padding: 0px;
+        text-align: center;
+        vertical-align: top;
+        background-color: transparent;
+        width: 100%;
+        float: left;
+    }
+    
+    .eventstinycal2 #tinycal_nav {
+        /*Defines the display of the month/increment decrement month navigation*/
+        color: #FFF;
+        background-color: #A2d783;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .eventstinycal2 #tinycal_weekday {
+        /*Defines the display of day cells*/
+        color: #FFF;
+        background-color: #c4c7c8;
+        padding: 0px;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    
+    .eventstinycal2 #tinycal_day {
+        /*Defines the display of blank day cells.*/
+        color: #000000;
+        background-color: #FFF;
+        padding: 0px;
+        vertical-align: top;
+    }
+    
+    .eventstinycal2 #tinycal_current_day {
+        /*Defines the display of blank day cells.*/
+        color: #FFF;
+        background-color: #4f4743;
+        vertical-align: top;
+    }
+    
+    .eventstinycal2 #tinycal_current_day a:link,
+    #tinycal_current_day a:visited {
+        color: #FFF;
+    }
+    
+    .eventstinycal2 #tinycal_current_day a:hover {
+        color: #FFF;
+    }
+    
+    .eventstinycal2 #tinycal_blank {
+        /*Defines the display of blank day cells.*/
+        background-color: transparent;
+    }
+    
+    .pageStyles table,
+    table[class^="telerik-"] {
+        background: none !important;
+    }
+    
+    .pageStyles td,
+    .pageStyles th,
+    table[class^="telerik-"] td,
+    table[class^="telerik-"] th {
+        padding: 0px;
+    }
+    /* google search form  -------------------------------------- */
+    
+    .searchform {
+        display: inline-block;
+        zoom: 1;
+        /* ie7 hack for display:inline-block */
+        *display: inline;
+        border: solid 1px #d2d2d2;
+        padding: 3px 5px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, .1);
+        box-shadow: 0 1px 0px rgba(0, 0, 0, .1);
+        background: #f1f1f1;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+        background: -moz-linear-gradient(top, #fff, #ededed);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+        /* ie7 */
+        -ms-filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+        /* ie8 */
+            width: 99%;
+    }
+    
+    .searchform input {
+        font: normal 12px/100% Arial, Helvetica, sans-serif;
+    }
+    
+    .searchform .searchfieldG {
+        background-color: #fff;
+        background-image: url(https://wcm.ent.sirsi.net/custom/web/content/SearchGoogle25.jpg);
+        background-repeat: no-repeat;
+        padding: 6px 6px 6px 8px;
+        width: 80%;
+        border: solid 1px #bcbbbb;
+        outline: none;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+        -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+    }
+    
+    .searchform .searchbuttonG {
+        color: #fff;
+        border: solid 1px #494949;
+        font-size: 11px;
+        height: 30px;
+        width: 30px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+        -webkit-border-radius: 2em;
+        -moz-border-radius: 2em;
+        border-radius: 2em;
+        background: #5f5f5f;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .searchbuttonG.button:hover {
+        opacity: .8;
+        background: #1267E9 !important;
+    }
+    
+    .searchform .searchfieldG[type=text]:focus,
+    .not-empty {
+        background-image: none !important;
+    }
+    
+    .displayElementLabel,
+    .availableLabel {
+        color: #696764;
+    }
+    
+    .displayElementText {
+        color: #696764
+    }
+    /* footer */
+    
+    #footer {
+        margin-top: 0px !important;
+        background-color: #0a1923;
+        width: 100%;
+        font-size: 12px;
+        transition: all .2s ease-in-out;
+    }
+    /*--------------------------------FOOTER-----------------------------------*/
+    /* Custom footer container */
+    
+    #footer a:hover {
+        color: #5cba6c;
+        transition: all .2s ease-in-out;
+    }
+    
+    .wcmfooterContainer {
+        width: 100%;
+        background-color: #0a1923;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .FootCol {
+        float: left;
+        height: 100%;
+        min-height: 200px;
+        min-width: 200px;
+        padding: 5px 2%;
+        vertical-align: top;
+        background-color: #0a1923;
+    }
+    
+    .FootCol a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .FootCol a:visited {
+        color: white;
+    }
+    
+    .FootCol li:hover a {
+        text-decoration: none;
+        color: #009445;
+    }
+    
+    .FootCol li a {
+        padding-left: 10px;
+    }
+    
+    .FootCol h3 {
+        color: white;
+        border-bottom: 1px solid #606060;
+        padding-left: 5px;
+    }
+    /* drop down of events and location */
+    
+    .dropEvents {
+        padding-left: 10px;
+    }
+    
+    #LibLocationDropDown:hover {
+        color: #5cba6c;
+    }
+    
+    .dropDownMenu:hover {
+        color: #5cba6c;
+        cursor: pointer;
+    }
+    
+    #LibEventsDropDown {
+        padding-left: 5px;
+        margin: 0px;
+    }
+    
+    #LibLocationDropDown {
+        padding-left: 5px;
+        margin: 0px;
+    }
+    
+    #chooseLib {
+        background-color: #0a1923;
+        color: white;
+        border: 0px solid #606060;
+        font-family: Verdana, Open Sans, Arial Unicode MS, Arial, Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    #chooseLibLoc {
+        background-color: #0a1923;
+        color: white;
+        border: 0px solid #606060;
+        font-family: Verdana, Open Sans, Arial Unicode MS, Arial, Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .dropEvents {
+        background-color: #285c8e;
+        letter-spacing: 1px;
+    }
+    /* end drop down of events and location */
+    /* Social Media buttons */
+    
+    .highlightit {
+        padding-left: 10px;
+    }
+    
+    .highlightit:hover {
+        opacity: .6;
+    }
+    /* End Social Media buttons */
+    /* SD Copyright */
+    
+    .sdCopyrightLink a {
+        color: #808285 !important;
+    }
+    
+    #copyright {
+        background-color: #000;
+        clear: both;
+    }
