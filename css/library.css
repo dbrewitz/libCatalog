@@ -5,31 +5,37 @@
     margin: 10px auto;
 }
 
+
+/* must stop ugly tables */
+table {
+  background-color: #fff !important;
+}
+
 /* tabbed widget skin change */
 
-.widget.skin43 .cpTabs>li>a:link,
-.widget.skin43 .cpTabs>li>a:visited {
-    background-color: rgba(237, 235, 230, .6) !important;
+/*NOTE updated 2/3/17 to get rid of right and left borders -tlvh*/
+
+	.widget.skin43 .cpTabs>li>a:link,
+  .widget.skin43 .cpTabs>li>a:visited {
+			background-color: rgba(237,235,230,.6) !important;
+			border-bottom: 4px solid #009445 !important;
+	}
+  .widget.skin43 .cpTabs>li.active>a {
+    background-color:#009445 !important;
     border-bottom: 4px solid #009445 !important;
-}
+  }
+	.widget.skin43 .cpTabs>li {
+    border-right: 1px solid #609f7c !important;
+    /*border-left: 1px solid #bfbfbf !important;*/
+	}
+	.widget.skin43 .cpTabs>li:first-child {
+		border-left: 0 !important;
+	}
+	.widget.skin43 .cpTabs>li:last-child {
+		border-right: 0 !important;
+	}
 
-.widget.skin43 .cpTabs>li {
-    border-right: 1px solid #bfbfbf !important;
-    border-left: 1px solid #bfbfbf !important;
-}
 
-.widget.skin43 .cpTabs>li:first-child {
-    border-left: 4px solid #bfbfbf !important;
-}
-
-.widget.skin43 .cpTabs>li:last-child {
-    border-right: 4px solid #bfbfbf !important;
-}
-
-.widget.skin43 .cpTabs>li.active>a {
-    background-color: #009445 !important;
-    border-bottom: 4px solid #009445 !important;
-}
 
 
 /* padding for gear icon and other little green button */
@@ -334,90 +340,8 @@ form.signin .remb {
 }
 
 
-/* CivicPlus Slider */
-
-.slideshowOptions .overlay {
-    max-width: 25%;
-    left: 72% !important;
-    height: 100%;
-    background-color: rgba(24, 24, 38, 0.4);
-    font-family: "Open Sans", sans-serif;
-    vertical-align: middle;
-    box-sizing: border-box;
-    padding: 10px 5px;
-    display: none;
-}
-
-.widget.skin43 .slideshowOptions .overlay .widgetTitle {
-    font-size: 28px;
-    font-weight: 900;
-    color: white;
-    text-align: center;
-}
-
-.slideshowOptions .overlay .widgetDesc {
-    font-size: 20px;
-    text-align: center;
-    padding-top: 2rem;
-}
-
-.widget.skin43 .widgetTitle:hover,
-.widget.skin43 .widgetTitle>a:hover {
-    font-weight: 900;
-}
-
-@media only screen and (max-width: 400px) {
-    .slideshowOptions .overlay {
-        display: none;
-    }
-}
 
 
-/*Booksite Recommendations Widget*/
-
-.eqi-container {
-    padding: 15px;
-    margin: 0;
-    list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
-    background-color: rgba(237, 235, 230, .6) !important;
-}
-
-.eqi-container> iframe {
-    height: 350px !important;
-    width: 200px !important;
-    box-sizing: border-box !important;
-    padding: 0px;
-    margin: 0px;
-}
-
-
-/*RSS Feed styling*/
-
-.widgetRSSFeed .widgetHeader,
-.widgetHeader .rssTitleNone {
-    display: none;
-}
-
-.row.nest.last.wide .rssInner.inner.col,
-#cc9b263b9d-a7e2-4e23-b747-b6d686e76be0> div:nth-child(2)> div.outer.col.col12.first> div.row.nest.last.wide> div {
-    padding-top: 0;
-}
-
-.calInner.inner.col,
-#cc9b263b9d-a7e2-4e23-b747-b6d686e76be0> div:nth-child(2)> div.outer.col.col12.first> div.row.nest.first.wide> div {
-    padding-bottom: 0;
-}
-
-.widgetViewAll.alignRight {
-    float: left;
-}
 
 
 /* override search tab color */
@@ -433,269 +357,34 @@ form.signin .remb {
 }
 
 
-/*Evanced Calendar Styling*/
 
-.heading {
-    font-family: 'Libre Baskerville';
-    font-size: 19.2px;
-    font-weight: bold;
-    width: 100%;
-    height: 60px;
-    text-align: center;
-    vertical-align: middle;
-    color: #ffffff;
-    background-color: #009445;
+
+/* tlvh adjusting black bar links to collapse to one line on mobile */
+
+li.widgetItem.contactCollapse {
+  width: 27%;
+  display: inline-block;
+  margin: 0 4% 0 0;
 }
 
-#headingText {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: normal;
+/*tlvh styling for alert messages*/
+
+.alertMessageContainer {
+  width: 100%;
+  margin:auto;
+  background-color:#FFD240;
 }
-
-
-/* Current Month Styles ---------------------------------------------------------------------------------------- */
-
-.eventstinycal {
-    /*overflow:auto;*/
-    font-size: 1em;
-    width: 100%;
-    /* Controls width of calendar - can be set to fixed width or a percentage relative to the container using a table or div as the container. */
-    background: rgba(237, 235, 230, .6) !important;
-    padding: 5px 15px 0px 15px;
+.alertMessageL1 {
+text-align: center;
+line-height: 1.2em;
+margin:0;
+padding-top:2px;
+color:black;
+font-weight:normal;
+font-size: 1.2em;
 }
-
-.eventstinycal a:link {
-    color: #4f4743;
-    text-decoration: none !important;
-}
-
-.eventstinycal a:visited {
-    color: #4f4743;
-    text-decoration: none !important;
-}
-
-.eventstinycal a:hover {
-    color: #4f4743;
-    text-decoration: underline;
-}
-
-.eventstinycal #tinycal_date,
-#tinycal_date a:link,
-#tinycal_date a:visited {
-    text-align: center;
-    font-size: 1em;
-    color: #4f4743;
-    padding: 0px;
-}
-
-.eventstinycal #tinycal {
-    font-size: 1em;
-    text-align: center;
-    vertical-align: top;
-    background-color: transparent;
-    width: 100%;
-    float: left;
-}
-
-.eventstinycal #tinycal tbody {
-    padding-bottom: 20px;
-}
-
-
-/* Widget Header*/
-
-.eventstinycal #tinycal_nav {
-    /*Defines the display of the month/increment decrement month navigation*/
-    color: #645d59;
-    /*	background-color:#236077; */
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.eventstinycal #tinycal_weekday {
-    /*Defines the display of day cells*/
-    color: #4f4743;
-    padding: 0px;
-    font-weight: bold;
-    font-size: 1.1em;
-    text-align: center;
-    background: none;
-}
-
-.eventstinycal #tinycal_day {
-    /*Defines the display of blank day cells.*/
-    color: #000000;
-    padding: 5px 0px;
-    font-weight: bold;
-    font-size: 1em;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-}
-
-.eventstinycal #tinycal_current_day {
-    /*Defines the display of blank day cells.*/
-    color: #FFF;
-    background-color: #4f4743;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.eventstinycal #tinycal_current_day a:link,
-#tinycal_current_day a:visited {
-    color: #FFF;
-    text-decoration: none;
-}
-
-.eventstinycal #tinycal_current_day a:hover {
-    color: #FFF;
-}
-
-.eventstinycal #tinycal_blank {
-    /*Defines the display of blank day cells.*/
-    background-color: transparent;
-}
-
-
-/* Other Month Styles --------------------------------------------------------------------------------------------- */
-
-.eventstinycal2 {
-    /*overflow:auto;*/
-    font-size: 1em;
-    width: 250px;
-    /* Controls width of calendar - can be set to fixed width or a percentage relative to the container using a table or div as the container. */
-    padding: 0px;
-    margin: 0px;
-    margin-left: 1.1em;
-    margin-bottom: 20px;
-}
-
-.eventstinycal2 a:link {
-    color: #666;
-    text-decoration: none;
-}
-
-.eventstinycal2 a:visited {
-    color: #666;
-    text-decoration: none;
-}
-
-.eventstinycal2 a:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
-.eventstinycal2 #tinycal_date,
-#tinycal_date a:link,
-#tinycal_date a:visited {
-    color: rgb(100, 93, 89);
-    display: block;
-    font-family: "Open Sans";
-    font-size: 1em;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 30.24px;
-    text-align: center;
-    text-transform: none;
-    word-break: break-word;
-    word-wrap: break-word;
-}
-
-.eventstinycal2 #tinycal {
-    font-size: 1em;
-    padding: 0px;
-    text-align: center;
-    vertical-align: top;
-    background-color: transparent;
-    width: 100%;
-    float: left;
-}
-
-.eventstinycal2 #tinycal_nav {
-    /*Defines the display of the month/increment decrement month navigation*/
-    color: #FFF;
-    background-color: #A2d783;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.eventstinycal2 #tinycal_weekday {
-    /*Defines the display of day cells*/
-    color: #FFF;
-    background-color: #c4c7c8;
-    padding: 0px;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-.eventstinycal2 #tinycal_day {
-    /*Defines the display of blank day cells.*/
-    color: #000000;
-    background-color: #FFF;
-    padding: 0px;
-    vertical-align: top;
-}
-
-.eventstinycal2 #tinycal_current_day {
-    /*Defines the display of blank day cells.*/
-    color: #FFF;
-    background-color: #4f4743;
-    vertical-align: top;
-}
-
-.eventstinycal2 #tinycal_current_day a:link,
-#tinycal_current_day a:visited {
-    color: #FFF;
-}
-
-.eventstinycal2 #tinycal_current_day a:hover {
-    color: #FFF;
-}
-
-.eventstinycal2 #tinycal_blank {
-    /*Defines the display of blank day cells.*/
-    background-color: transparent;
-}
-
-.pageStyles table,
-table[class^="telerik-"] {
-    background: none !important;
-}
-
-.pageStyles td,
-.pageStyles th,
-table[class^="telerik-"] td,
-table[class^="telerik-"] th {
-    padding: 0px;
-}
-
-
-/*Events and Classes Evanced button styling*/
-
-.eventsAndClassesDivButtonContainerLink {
-    text-decoration: none !important;
-}
-
-.eventsAndClassesDivButtonContainer {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    width: 33.33%;
-    height: 100px;
-}
-
-.eventsAndClassesDivButton {
-    background: #1d6078;
-    color: #fff;
-    align-self: center;
-    padding: 2rem;
-    font-weight: bold;
-    text-align: center;
+.alertMessageL2 {
+font-size: 1em;
 }
 
 
