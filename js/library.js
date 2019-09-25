@@ -27,7 +27,7 @@ setTimeout(changeFavicon, 250);
 
 
 
-// custom js and GA event Tracking 
+// custom js and GA event Tracking
 var Lib = {
     p: function(element, cat, action, type) {
         $(element).each(function() {
@@ -83,19 +83,19 @@ var Lib = {
         );
     },
     // add <br> on slider title and description for line breaks
-    b: function() {
-        var addLineBreakTitle = $('.slideshowOptions  .overlay .widgetTitle').each(function() {
-            var old = $(this).html()
-            var newTxt = old.replace(/&lt;br&gt;/g, '<br>')
-            $(this).replaceWith('<h4 class="widgetTitle">' + newTxt + '</h4>')
-        })
-        var addLineBreakDesc = $('.slideshowOptions  .overlay .widgetDesc').each(function() {
-            var old = $(this).html()
-            var newTxt = old.replace(/&lt;br&gt;/g, '<br>')
-            $(this).replaceWith('<p class="widgetDesc">' + newTxt + '</p')
-        })
-        $('.slideshowOptions  .overlay').css('display', 'block')
-    },
+    // b: function() {
+    //     var addLineBreakTitle = $('.slideshowOptions  .overlay .widgetTitle').each(function() {
+    //         var old = $(this).html()
+    //         var newTxt = old.replace(/&lt;br&gt;/g, '<br>')
+    //         $(this).replaceWith('<h4 class="widgetTitle">' + newTxt + '</h4>')
+    //     })
+    //     var addLineBreakDesc = $('.slideshowOptions  .overlay .widgetDesc').each(function() {
+    //         var old = $(this).html()
+    //         var newTxt = old.replace(/&lt;br&gt;/g, '<br>')
+    //         $(this).replaceWith('<p class="widgetDesc">' + newTxt + '</p')
+    //     })
+    //     $('.slideshowOptions  .overlay').css('display', 'block')
+    // },
     // JS for login dropdown
 
     l: function() {
@@ -133,14 +133,14 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#eventstinycal').closest('.inner.col').addClass('calInner');
 
     // checks to convert slider line breaks
-    var checkSliderExist = setInterval(function() {
-        if ($('.overlay .widgetTitle').length) {
-            Lib.b();
-            clearInterval(checkSliderExist);
-        }
-        setTimeout(function() {
-            clearInterval(checkSliderExist)
-        }, 2500)
-
-    }, 50);
+    // var checkSliderExist = setInterval(function() {
+    //     if ($('.overlay .widgetTitle').length) {
+    //         Lib.b();
+    //         clearInterval(checkSliderExist);
+    //     }
+    //     setTimeout(function() {
+    //         clearInterval(checkSliderExist)
+    //     }, 2500)
+    //
+    // }, 50);
 });
